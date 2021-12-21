@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  background-color: #352F44;
+}
+
+* #root {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* #root #inputSection {
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+* #root #inputSection #btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* #root #inputSection #btnContainer button {
+  width: 6rem;
+  height: 3rem;
+  margin: 1rem;
+  background-color: #2A2438;
+  color: #DBD8E3;
+  font-size: 1rem;
+  border: none;
+  border-radius: .5rem;
+}
+
+* #root #inputSection #btnContainer button:active {
+  height: 3rem;
+  margin: 1rem;
+  background-color: #DBD8E3;
+  opacity: .4;
+  color: #2A2438;
+  font-size: 1rem;
+  border: none;
+  border-radius: .5rem;
+}
+
+* #root #inputSection #inputCard {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #5C5470;
+  border-radius: 1.5rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1rem;
+}
+
+* #root #inputSection #inputCard #exitInput {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  width: 6rem;
+  height: 3rem;
+  margin: 1rem;
+  background-color: #2A2438;
+  color: #DBD8E3;
+  font-size: 1rem;
+  border: none;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+* #root #inputSection #inputCard #exitInput:active {
+  height: 3rem;
+  margin: 1rem;
+  background-color: #DBD8E3;
+  opacity: .4;
+  color: #2A2438;
+  font-size: 1rem;
+  border: none;
+  border-radius: .5rem;
+}
+
+* #root #inputSection #inputCard label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-align: right;
+  width: 12rem;
+  margin: .5rem 2.5rem;
+  color: #DBD8E3;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+* #root #inputSection #inputCard label input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 4rem;
+          flex: 0 0 4rem;
+  margin-left: 1rem;
+  width: 7rem;
+  background-color: #DBD8E3;
+  border: none;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+  border-radius: .4rem;
+  font-size: 16px;
+}
+
+* #root #inputSection #inputCard label input:focus {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 12rem;
+          flex: 0 0 12rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 12rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+  font-size: 45px;
+}
+
+* #root #inputSection #inputCard #submit {
+  width: 6rem;
+  height: 3rem;
+  margin: 1rem;
+  background-color: #2A2438;
+  color: #DBD8E3;
+  font-size: 1rem;
+  border: none;
+  border-radius: .5rem;
+}
+
+* #root #inputSection #inputCard #submit:active {
+  height: 3rem;
+  margin: 1rem;
+  background-color: #DBD8E3;
+  opacity: .4;
+  color: #2A2438;
+  font-size: 1rem;
+  border: none;
+  border-radius: .5rem;
+}
+
+* #root #cardsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* #root #cardsContainer .animalCard {
+  position: relative;
+  width: 18rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #5C5470;
+  margin: 1rem;
+  color: #DBD8E3;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+* #root #cardsContainer .animalCard h3 {
+  font-size: 2rem;
+}
+
+* #root #cardsContainer .animalCard .deleteBtn {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  width: 6rem;
+  height: 3rem;
+  margin: 1rem;
+  background-color: #2A2438;
+  color: #DBD8E3;
+  font-size: 1rem;
+  border: none;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+* #root #cardsContainer .animalCard .deleteBtn:active {
+  height: 3rem;
+  margin: 1rem;
+  background-color: #DBD8E3;
+  opacity: .4;
+  color: #2A2438;
+  font-size: 1rem;
+  border: none;
+  border-radius: .5rem;
+}
+/*# sourceMappingURL=styles.css.map */

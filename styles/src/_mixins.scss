@@ -1,0 +1,39 @@
+@import "./variables";
+
+@mixin dfCollumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin cardCenter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@mixin dfCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+ @mixin button {
+    width: 6rem;
+    height: 3rem;
+    margin: 1rem;
+    background-color: $pops;
+    color: $light;
+    font-size: 1rem;
+    border: none;
+    border-radius: .5rem;
+ }
+ @mixin focusedButton {
+    height: 3rem;
+    margin: 1rem;
+    background-color: $light;
+    opacity: .4;
+    color: $pops;
+    font-size: 1rem;
+    border: none;
+    border-radius: .5rem;
+ }

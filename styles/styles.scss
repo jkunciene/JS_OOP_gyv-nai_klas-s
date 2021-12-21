@@ -1,0 +1,124 @@
+@import './src/mixins';
+@import './src/variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    body{
+        background-color: $base;
+    }
+    #root{
+        width: 100vw;
+        height: fit-content;
+        @include dfCollumn;
+        #inputSection{
+            width: 80%;
+            height: fit-content;
+            @include dfCollumn;
+            margin-bottom: 1rem;
+            #btnContainer{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                button{
+                    @include button;
+                }
+                button:active{
+                    @include focusedButton;
+                }
+            }
+            #inputCard{
+                position: relative;
+                width: fit-content;
+                height: fit-content;
+                @include dfCollumn;
+                background-color: $mid;
+                border-radius: 1.5rem;
+                justify-content: space-around;
+                margin-top: 1rem;
+                #exitInput{
+                    position: absolute;
+                    top: -2rem;
+                    right: -2rem;
+                    @include button;
+                    @include dfCollumn;
+                    width: 3rem;
+                    text-align: center;
+                    font-size: 3rem;
+                }
+                #exitInput:active{
+                    @include focusedButton;
+                }
+                label{
+                    display: flex;
+                    justify-content: right;
+                    text-align: right;
+                    width: 12rem;
+                    margin: .5rem 2.5rem;
+                    color: $light;
+                    font-size: 1.2rem;
+                    overflow: hidden;
+                    input{
+                        flex: 0 0 4rem;
+                        margin-left: 1rem;
+                        width: 7rem;
+                        background-color: $light;
+                        border: none;
+                        transition: 100ms;
+                        border-radius: .4rem;
+                        font-size: 16px;
+                    }
+                    input:focus{
+                        flex: 0 0 12rem;
+                        align-items: flex-end;
+                        width: 12rem;
+                        height: 4rem;
+                        border: none;
+                        outline: none;
+                        font-size: 45px;
+                    }
+                }
+                #submit{
+                    @include button;
+                }
+                #submit:active{
+                    @include focusedButton;
+                }
+            }
+        }
+        #cardsContainer{
+            @include cardCenter;
+            flex-wrap: wrap;
+            .animalCard{
+                position: relative;
+                width: 18rem;
+                height: fit-content;
+                @include cardCenter;
+                flex-direction: column;
+                background-color: $mid;
+                margin: 1rem;
+                color: $light;
+                font-size: 1.5rem;
+                border-radius: 1.5rem;
+                    h3{
+                        font-size: 2rem;
+                    }
+                    .deleteBtn{
+                        position: absolute;
+                        top: -2rem;
+                        right: -2rem;
+                        @include button;
+                        @include dfCollumn;
+                        width: 3rem;
+                        text-align: center;
+                        font-size: 3rem;
+                    }
+                    .deleteBtn:active{
+                        @include focusedButton;
+                    }
+            }
+        }
+        
+    }
+}
